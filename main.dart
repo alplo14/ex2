@@ -34,7 +34,9 @@ main(){
   fonction2_2(phrase_fonction2_2);
   fonction2_3(liste_fonction2_3);
   fonction2_4_encoder(noms_fonction2_4, prenoms_fonction2_4, adresses_fonction2_4);
-  fonction2_4_trier(ListeMembre); //pas complète :(
+  //fonction2_4_trier(ListeMembre); //pas complète :(
+  
+  fonction2_4_chercher(fonction2_4_encoder(noms_fonction2_4, prenoms_fonction2_4, adresses_fonction2_4), "a");
   fonction2_5(nomClubs_fonction2_5,lieuClubs_fonction2_5,qualiteClubs_fonction2_5,nomsMembreClub1_fonction2_5,prenomsMembreClub1_fonction2_5,adressesMembreClub1_fonction2_5,nomsMembreClub2_fonction2_5,prenomsMembreClub2_fonction2_5,adressesMembreClub2_fonction2_5,nomsMembreClub3_fonction2_5,prenomsMembreClub3_fonction2_5,adressesMembreClub3_fonction2_5);
 }
 

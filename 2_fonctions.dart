@@ -92,6 +92,15 @@ fonction2_4_encoder(var noms, [var prenoms, var adresses]){ //Il faut que les 3 
 }
 }*/
 
+fonction2_4_chercher(listeMembre, var lettreRecherchee){
+  
+  for (var i=0; i<listeMembre.length; i++){
+    var lettresSeparees = listeMembre[i].split("");
+    if (lettresSeparees[0]==lettreRecherchee){
+      print(listeMembre[i]);
+    }
+  }
+}
 
 fonction2_5(nomsClubs,lieuxClubs,qualitesClub,nomMembreClub1,prenomMembreClub1,adresseMembreClub1,nomMembreClub2,prenomMembreClub2,adresseMembreClub2,nomMembreClub3,prenomMembreClub3,adresseMembreClub3){
   var clubs = new List.fixedLength(3); //Ce programme permet de considérer exactement 3 clubs. Cependant, il est possible d'ajouter des membres pour n'importe quel club. Il faut seulement s'assurer que pour chaque membre ajouté, il y a bel et bien un nom, un prénom et une adresse email.
