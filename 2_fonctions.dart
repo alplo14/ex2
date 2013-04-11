@@ -49,7 +49,7 @@ fonction2_4_encoder(var noms, [var prenoms, var adresses]){ //Il faut que les 3 
   }
 }
 
-fonction2_4_trier(ListeMembre){
+/*fonction2_4_trier(ListeMembre){
   var premier = ListeMembre[0].split("");
   /*ListeMembre.sort(
       (premier[0], ListeMembre[i][0]){
@@ -90,9 +90,64 @@ fonction2_4_trier(ListeMembre){
   }
   print (ListeMembre);
 }
-
+}*/
 
 
 fonction2_5(nomsClubs,lieuxClubs,qualitesClub,nomMembreClub1,prenomMembreClub1,adresseMembreClub1,nomMembreClub2,prenomMembreClub2,adresseMembreClub2,nomMembreClub3,prenomMembreClub3,adresseMembreClub3){
+  var clubs = new List.fixedLength(3); //Ce programme permet de considérer exactement 3 clubs. Cependant, il est possible d'ajouter des membres pour n'importe quel club. Il faut seulement s'assurer que pour chaque membre ajouté, il y a bel et bien un nom, un prénom et une adresse email.
+  var membreClub1=[];
+  var membreClub2=[];
+  var membreClub3=[];
+  var club1={};
+  var club2={};
+  var club3={};
+  clubs[0]=club1;
+  clubs[1]=club2;
+  clubs[2]=club3;
   
+  for (var i=0; i<nomMembreClub1.length; i++){ //pour créer les listes de membres
+    membreClub1.add([nomMembreClub1[i], prenomMembreClub1[i],adresseMembreClub1[i]]);
+  }
+    
+  for (var i=0; i<nomMembreClub2.length; i++){
+    membreClub2.add([nomMembreClub2[i], prenomMembreClub2[i],adresseMembreClub2[i]]);
+  }
+  for (var i=0; i<nomMembreClub3.length; i++){
+    membreClub3.add([nomMembreClub3[i], prenomMembreClub3[i],adresseMembreClub3[i]]);
+  }
+  var membresTotaux = [membreClub1,membreClub2,membreClub3];
+  
+  
+  
+  /*for (var i=0; i<membreClub1.length||i<membreClub2.length||i<membreClub3.length; i++){
+    while (i<membreClub1.length){
+      
+    }*/
+    
+  //for (var i=0; i<membreClub1.length; i++){
+    club1["Nom"]=nomsClubs[0];
+    club1["Lieu"]=lieuxClubs[0];
+    club1["Membres"]=membresTotaux[0];
+    
+    club2["Nom"]=nomsClubs[1];
+    club2["Lieu"]=lieuxClubs[1];
+    club2["Membres"]=membresTotaux[1];
+    
+    club3["Nom"]=nomsClubs[2];
+    club3["Lieu"]=lieuxClubs[2];
+    club3["Membres"]=membresTotaux[2];
+    
+  /*for (var i=0; i<clubs.length;i++){
+   for (var j=0; j<clubs.length; j++){
+    clubs[i]["Nom"]=nomsClubs[j];
+    clubs[i]["Lieu"]=lieuxClubs[j];
+    clubs[i]["Liste des membres"]=membresTotaux[j]; 
+   }
+  }*/
+  print (clubs);
 }
+
+
+
+
+
